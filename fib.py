@@ -28,7 +28,7 @@ def fib2(x):
     return l
 
 def fib3(x):
-    """dfd"""
+    """Another way to get fib number (not recursive)"""
     a = 0
     b = 1
     for i in range(x-1):
