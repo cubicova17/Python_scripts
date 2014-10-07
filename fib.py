@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # Name:        module1
-# Purpose:
+# Purpose:  FibNumbers
 #
 # Author:      Dvoiak
 #
@@ -11,7 +11,7 @@
 
 
 def fib(x):
-    """Recursive Fibonachi number"""
+    """Recursive function of Fibonacci number"""
     if x==0:
         return 0
     elif x==1:
@@ -20,9 +20,10 @@ def fib(x):
         return fib(x-1)+fib(x-2)
 
 def fib2(x):
-    """Making a list of "x" fib numbers (no recursion)"""
+    """Making a list of "x" fib numbers (not recursive)
+    Returns a list of fib numbers"""
     l = [0,1]
-    while len(l)<x:
+    while len(l)<=x:
         l.append(l[-1]+l[-2])
     return l
 
@@ -30,7 +31,7 @@ def fib3(x):
     """dfd"""
     a = 0
     b = 1
-    for i in range(x-2):
+    for i in range(x-1):
         a,b = b,a+b
     return b
 
