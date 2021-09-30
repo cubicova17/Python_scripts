@@ -35,11 +35,16 @@ def fib3(x):
         a,b = b,a+b
     return b
 
+#fib numbers function in one line
+fib4 = lambda x: x if x < 2 else fib4(x-1) + fib4(x-2) 
+print(list(map(fib4,range(1,10))))
+    
 def main():
     N = 7
     print fib(N)
     print fib2(N)
     print fib3(N)
 
+    
 if __name__ == '__main__':
     main()
